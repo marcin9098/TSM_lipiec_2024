@@ -9,8 +9,29 @@
     Tu za chwilę będzię coś...
     <br>
     <script>
-        // JavaScript code
-        document.write("Hello, World!");
+        // Definicja obiektu "kot"
+        let kot = {
+            //właściwości - opisują cechy obiektu   
+            imie: "Mruczek",
+            wiek: 3,
+            kolor: "biały",
+            // Metody obiektu - opisują możliwe działania na obiekcie
+            miaucz: function() {
+                document.write("Miau!<br>");
+            },
+            glodny: function() {
+                document.write("Nakarm mnie proszę!<br>");
+            }
+        };
+
+        // Wykorzystanie obiektu
+        document.write("Imię kota: " + kot.kolor + "<br>");
+        document.write("Wiek kota: " + kot.wiek + "<br>");
+        kot.miaucz();
+        kot.glodny();
+
+
+
     </script>
 
 </body>
